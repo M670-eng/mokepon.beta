@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>beta(26376767347.723862)mokepon html ???.1.1.0</title>
+    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="./stilitos.css">
+</head>
+<body>
+    <h1>Mokepon! 🔥💧🌱 </h1>
+
+    <section id="seleccionar-mascota">
+        <h2>Elige tu mascota:</h2>
+
+        <!--MASCOTAS-->
+        <label for="hipodoge">Hipodoge</label>
+        <input type="radio" name="mascota" id="hipodoge">
+
+        <label for="capipepo">Capipepo</label>
+        <input type="radio" name="mascota" id="capipepo">
+
+        <label for="ratigueya">Ratigueya</label>
+        <input type="radio" name="mascota" id="ratigueya">
+    
+        <button id="boton-mascota">Seleccionar</button>
+    </section>
+
+    <div id="alerta" class="custom-alert">
+        🚨 Acabas de no elegir la mascota Porfavor dale El boton de ok <br>
+        <button onclick="this.parentElement.style.display='none'">OK</button>
+    </div>
+    
+    <section id="seleccionar-ataque">
+        <h2>Elige tu ataque:</h2>
+
+        <!---VIDA-->    
+        <label for="HP jugador">HP de tu mascota <span id="mascota-jugador"></span></label>
+        <progress value="100" max="3" min="1" id="HP jugador"></progress>
+        <label for="HP enemigo">HP de la mascota del <span id="mascota-enemigo"></span> enemigo </label>
+        <progress value="100" max="3" min="1" id="HP enemigo"></progress>
+        
+        <p>
+           <!--BOTONES-->
+           <button id="boton-fuego">Fuego 🔥 </button>
+           <button id="boton-agua">Agua 💧  </button>
+           <button id="boton-tierra">Tierra 🌱</button>
+           <button id="boton-uhir">boton-uhir</button>
+        </p>
+    </section>
+    <section id="mensajes">
+    </section>
+
+    <section id="reiniciar">
+        <button id="boton-reinicaiar">Reiniciar</button>
+    </section>
+</body>
+</html>
