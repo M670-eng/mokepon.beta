@@ -56,6 +56,12 @@ function ataqueAleatorioEnemigo() {
     } else {
         ataqueEnemigo = 'TIERRA'
     }
+
+    crearMensaje
+}
+
+function crearMensaje() {
+    
 }
 
 function aleatorio(min, max) {
